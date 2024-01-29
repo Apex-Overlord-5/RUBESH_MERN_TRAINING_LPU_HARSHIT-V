@@ -1,3 +1,8 @@
+# Rubesh Raman
+# 12115752
+# Class 5 Assignment
+# LPU
+
 `git log --oneline :- #- `git log --oneline` displays a concise, one-line summary of commit history.
 
 `git add :- # `git add` stages changes in the working directory for the next commit.

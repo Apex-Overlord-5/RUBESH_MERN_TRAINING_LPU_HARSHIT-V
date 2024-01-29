@@ -1,3 +1,8 @@
+# Rubesh Raman
+# 12115752
+# Class 6 Assignment
+# LPU
+
 #PART A -----  Switching between branches
 git checkout -b new1 work-a  # Create and switch to a new branch named 'new1' from 'work-a'
 git checkout master           # Switch to the 'master' branch

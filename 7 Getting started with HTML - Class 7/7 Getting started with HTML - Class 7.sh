@@ -1,4 +1,7 @@
-
+# Rubesh Raman
+# 12115752
+# Class 7 Assignment
+# LPU
 echo "# testing_github" >> README.md :- # Create a README file with initial content
 
 

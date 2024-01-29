@@ -1,4 +1,7 @@
-
+# Rubesh Raman
+# 12115752
+# Class 4 Assignment
+# LPU
 git revert :- #git revert <commit-SHA> creates a new commit undoing changes from a specific commit.
               # It doesn't modify existing commits, maintaining a clear commit history.
 
