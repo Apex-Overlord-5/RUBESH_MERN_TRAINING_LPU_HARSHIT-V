@@ -8,4 +8,4 @@ git reset TRACK_ID --hard/--soft FLAGS  #:-  `git reset <commit-SHA> --hard` sto
 
 git checkout -b branch  # git checkout -b Rubesh` creates and switches to a new branch named `Rubesh` in a single command.
 
-git checkout branch   #git checkout Rubesh` switches to the existing branch named `Rubesh`.
+git checkout branch   #git checkout Rubesh` switches to the existing branch named `Rubesh`
