@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #673ab7, #ffeb3b, #2196f3, #673ab7, #ffeb3b, #2196f3);
+    animation: backgroundAnimation 15s infinite alternate;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .app-container {
+    text-align: auto;
+    transform: translateX(65%);
+  }
+  
+  .app-header {
+    font-size: 36px;
+    color: #050000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    border: 20px solid black;
+    background-color: cyan;
+    display: inline-block;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .todo-item {
+    background-color: #444;
+    border: 1px solid #555;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  .complete-btn,
+  .delete-btn,
+  .update-btn,
+  .add-btn {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.8s;
+  }
+  
+  .complete-btn {
+    background: linear-gradient(to right, #00bcd4, #ffeb3b, #4caf50);
+  }
+  
+  .complete-btn:hover {
+    background: linear-gradient(to right, #00bcd4, #ffeb3b, #4caf50);
+  }
+  
+  .delete-btn {
+    background: linear-gradient(to right, #ffeb3b, #ff5722);
+  }
+  
+  .delete-btn:hover {
+    background: linear-gradient(to right, #ff5722, #ffeb3b);
+  }
+  
+  .update-btn {
+    background: linear-gradient(to right, #8e24aa, #2196f3);
+  }
+  
+  .update-btn:hover {
+    background: linear-gradient(to right, #2196f3, #8e24aa);
+  }
+  
+  .add-btn {
+    background: linear-gradient(to right, #e91e63, #4caf50);
+  }
+  
+  .add-btn:hover {
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+  }
+  
+  .add-todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 10px;
+    height: 60px;
+    width: 220px;
+    border-radius: 40px;
+    font-family: Stencil;
+    font-size: large;
+    letter-spacing: 2px;
+  }
+  
+  .add-todo-container input::placeholder {
+    font-family: 'Monospace', monospace;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .add-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .completed-tasks {
+    margin-top: 20px;
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: red;
+    margin: 5px 0;
+  }
+  
+  .todo-item {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-family: stencil;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+    font-size: larger;
+    font-family: 'Stencil', sans-serif;
+  }
+  
+  .completed-tasks {
+    margin-top: 20px;
+  }
+  
+  .completed-tasks h2 {
+    transform: translateX(35%);
+  }
+  
+  .completed-task-container {
+    background: linear-gradient(45deg, #444, #444);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+    font-family: 'Stencil', sans-serif;
+    transform: translateX(40%);
+  }
+  
+  .completed-task::before {
+    content: '✔';
+    color: #4caf50;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  

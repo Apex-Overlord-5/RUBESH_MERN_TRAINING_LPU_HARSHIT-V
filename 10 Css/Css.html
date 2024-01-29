@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Todo List</h1>
+
+    <ul>
+        <li>
+            <input type="checkbox" id="task1" />
+            <label for="task1">Task 1</label>
+        </li>
+        <li class="completed">
+            <input type="checkbox" id="task2" checked />
+            <label for="task2">Task 2</label>
+        </li>
+        <li>
+            <input type="checkbox" id="task3" />
+            <label for="task3">Task 3</label>
+        </li>
+    </ul>
+
+</body>
+</html>
