@@ -1,0 +1,56 @@
+
+
+/* Box Model Overview
+1 Margin: Space around the element.
+2 Border: Styling around the edge of the element.3
+3 Padding: Space between the content and the border.
+4 Width/Height: Dimensions of the element.
+
+Eg:- Styling for a Div: */
+
+  div {
+    margin: 10px;
+    border: 2px dashed black;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+  }
+
+/* Overflow Handling:
+1 Overflow: Scroll to add a scrollbar, or hidden to hide overflow.
+
+Eg:- Overflow Styling: */
+
+  div.overflowExample {
+    overflow: scroll;
+  }
+
+
+/* Display Property
+1 Determines the type of box used for an HTML element.
+2 Values: inline, block, inline-block, etc.
+3 Not inherited by child elements.
+
+Eg:- Inline-Block Styling: */
+  div.inlineBlockExample {
+    display: inline-block;
+  }
+
+
+/* Margin Property
+1 Defines space outside the border of an element.
+2 Format: margin: top right bottom left.
+
+Eg:- Center Arrangement Styling: */
+  .centerExample {
+    margin: 10px auto; /* 10px top/bottom, auto left/right */
+  }
+
+
+/* Padding Property:
+1 Defines space between content and border.
+2 Format: padding: top right bottom left. */
+
+/* Inline Elements:
+1 Display property not inherited by child elements.
+2 Inline elements adjust width as necessary. */

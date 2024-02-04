@@ -1,0 +1,63 @@
+
+/* 
+1. Link Styling */
+   a:link {
+     color: gray; /* Default link color */
+   }
+
+   a:visited {
+     color: green; /* Color for visited links */
+   }
+
+   a:active {
+     color: black; /* Color for active links (clicked) */
+   }
+/* 
+2. Hover Effect for Any Element:
+   :hover {
+     color: red; 
+   } */
+
+/* 
+3. Position Property Examples:
+
+   1 Static Position (Default):
+     Elements positioned according to the normal flow of the document, no special positioning, no need for additional properties.
+
+   2 Relative Position:
+     Positioned relative to its normal position, can be moved with top, right, bottom, left properties.*/
+     .relativeExample {
+       position: relative;
+       top: 10px;
+     } 
+
+/* 
+4. 
+Fixed Position:**
+     Fixed to the viewport, does not affect the layout or positioning of other elements.*/
+     .fixedExample {
+       position: fixed;
+       top: 0;
+
+     } 
+
+/* 
+5. 
+Absolute Position:
+     Positioned relative to its first positioned (not static) ancestor element. If no positioned ancestor, it uses the document body.*/
+     .absoluteExample {
+       position: absolute;
+       top: 50px;
+       left: 20px;
+
+     } 
+
+
+/*
+6.
+Sticky Position:
+     Moves with the page scroll until it reaches a specific point, then becomes fixed. Requires the top property to specify the point where it becomes fixed.*/
+     .stickyExample {
+       position: sticky;
+       top: 100px;
+     } 
