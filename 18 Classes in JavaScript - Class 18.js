@@ -1,3 +1,7 @@
+// Rubesh Raman
+// 12115752
+// Class 18 Assignment
+// LPU
 // javascript Object 
 let rubeshInfo = {
   name: "Rubesh",

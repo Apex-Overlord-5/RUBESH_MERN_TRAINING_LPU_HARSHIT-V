@@ -1,4 +1,8 @@
-javascript
+// Rubesh Raman
+// 12115752
+// Class 16 Assignment
+// LPU
+// javascript Objects
 // Strings
 console.log(typeof "Rubesh's Details");
 
