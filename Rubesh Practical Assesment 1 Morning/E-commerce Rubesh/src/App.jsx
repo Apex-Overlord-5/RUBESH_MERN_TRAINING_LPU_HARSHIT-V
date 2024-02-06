@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 import ProductList from './ProductList';
 
@@ -11,7 +10,7 @@ const App = () => {
       price: 2500,
       image: require('./Images/ImageName1.png').default,
     },
-    // Include image paths for other products
+   
   ];
 
   return (
