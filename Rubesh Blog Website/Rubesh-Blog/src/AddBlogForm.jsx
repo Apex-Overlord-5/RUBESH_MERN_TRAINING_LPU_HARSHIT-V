@@ -1,34 +1,25 @@
 // src/AddBlogForm.jsx
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const AddBlogForm = ({ addBlog }) => {
   const [newBlog, setNewBlog] = useState({ title: '', content: '' });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addBlog({ ...newBlog, id: Date.now() });
-    setNewBlog({ title: '', content: '' });
+
+    try {
+      const response = await axios.post('http://localhost:5000/api/blogs', newBlog);
+      addBlog(response.data);
+      setNewBlog({ title: '', content: '' });
+    } catch (error) {
+      console.error('Error adding blog:', error);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Add Blog</h2>
-      <label>
-        Title:
-        <input
-          type="text"
-          value={newBlog.title}
-          onChange={(e) => setNewBlog({ ...newBlog, title: e.target.value })}
-        />
-      </label>
-      <label>
-        Content:
-        <textarea
-          value={newBlog.content}
-          onChange={(e) => setNewBlog({ ...newBlog, content: e.target.value })}
-        />
-      </label>
-      <button type="submit">Add Blog</button>
+      {/* ... your existing form code */}
     </form>
   );
 };

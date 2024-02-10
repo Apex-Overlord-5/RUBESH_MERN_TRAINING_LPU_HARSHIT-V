@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import BlogList from './BlogList';
 import AddBlogForm from './AddBlogForm';
+import './App.css'; // Import the CSS file
 
 const App = () => {
   const [blogs, setBlogs] = useState([
@@ -22,8 +23,8 @@ const App = () => {
   };
 
   return (
-    <div style={{ backgroundColor: 'silver', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <h1 style={{ textAlign: 'center', width: '100%' }}>Rubesh Blogging Website</h1>
+    <div className="container">
+      <h1>Rubesh Blogging Website</h1>
       <AddBlogForm addBlog={addBlog} />
       <BlogList blogs={blogs} deleteBlog={deleteBlog} updateBlog={updateBlog} />
     </div>
