@@ -4,15 +4,15 @@ const blogSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      require: [true, "title is required"],
+      require: [true, "Title Required !"],
     },
     description: {
       type: String,
-      required: [true, "description is require"],
+      required: [true, "Description Required !"],
     },
     image: {
       type: String,
-      required: [true, "image is require"],
+      required: [true, "Image Required !"],
     },
     user: {
       type: mongoose.Types.ObjectId,

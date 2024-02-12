@@ -36,7 +36,7 @@ exports.createBlogController = async (req, res) => {
     if (!title || !description || !image || !user) {
       return res.status(400).send({
         success: false,
-        message: "Please Provide ALl Fields",
+        message: "Please Provide All Fields",
       });
     }
     const exisitingUser = await userModel.findById(user);
@@ -44,7 +44,7 @@ exports.createBlogController = async (req, res) => {
     if (!exisitingUser) {
       return res.status(404).send({
         success: false,
-        message: "unable to find user",
+        message: "Unable to Find User",
       });
     }
 
@@ -158,7 +158,7 @@ exports.userBlogControlller = async (req, res) => {
     }
     return res.status(200).send({
       success: true,
-      message: "user blogs",
+      message: "User Blogs",
       userBlog,
     });
   } catch (error) {
