@@ -5,13 +5,17 @@
   "main": "server.js",
   "scripts": {
     "start": "server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix •/client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
   },
   "author": "Rubesh Raman",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.2",
     "express": "^4.18.2",
