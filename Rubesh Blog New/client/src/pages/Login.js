@@ -65,7 +65,7 @@ const Login = () => {
           </Typography>
 
           <TextField
-            placeholder="email"
+            placeholder="Email"
             value={inputs.email}
             name="email"
             margin="normal"
@@ -74,7 +74,7 @@ const Login = () => {
             onChange={handleChange}
           />
           <TextField
-            placeholder="password"
+            placeholder="Password"
             value={inputs.password}
             name="password"
             margin="normal"

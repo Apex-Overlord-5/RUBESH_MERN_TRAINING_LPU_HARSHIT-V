@@ -29,7 +29,7 @@ const Header = () => {
     <>
       <AppBar position="sticky">
         <Toolbar>
-          <Typography variant="h4">My Blog APP</Typography>
+          <Typography variant="h4">Rubesh 12115752 LPU MERN Blog APP</Typography>
           {isLogin && (
             <Box display={"flex"} marginLeft="auto" marginRight={"auto"}>
               <Tabs

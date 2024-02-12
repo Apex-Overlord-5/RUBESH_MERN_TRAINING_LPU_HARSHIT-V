@@ -61,7 +61,7 @@ const Register = () => {
             Register
           </Typography>
           <TextField
-            placeholder="name"
+            placeholder="Name"
             value={inputs.name}
             onChange={handleChange}
             name="name"
@@ -70,7 +70,7 @@ const Register = () => {
             required
           />
           <TextField
-            placeholder="email"
+            placeholder="Email"
             value={inputs.email}
             name="email"
             margin="normal"
@@ -79,7 +79,7 @@ const Register = () => {
             onChange={handleChange}
           />
           <TextField
-            placeholder="password"
+            placeholder="Password"
             value={inputs.password}
             name="password"
             margin="normal"
